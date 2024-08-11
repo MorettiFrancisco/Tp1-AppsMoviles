@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="BackGround">#443157</color>
+    <color name="Text">#E0E0F5</color>
+    <color name="Button">#56249D</color>
+    <color name="ButtonText">#FFFFFF</color>
+    <color name="Card">#56249D</color>
+    <color name="HintText">#707590</color>
+</resources>
