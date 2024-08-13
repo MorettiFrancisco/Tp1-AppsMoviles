@@ -52,9 +52,11 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+
                 android:hint="Escribe tu username"
                 android:inputType="text"
                 android:textColorHint="@color/HintText" />
@@ -68,6 +70,7 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -84,14 +87,17 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+
                 android:hint="Escribe Contraseña "
                 android:inputType="textPassword"
                 android:textColorHint="@color/HintText" />
 
             <EditText
+                android:id="@+id/veri"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -107,6 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+
         android:layout_marginEnd="76dp"
         android:backgroundTint="@color/Button"
         android:text="Aceptar"
@@ -124,7 +131,7 @@
         android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="76dp"
         android:backgroundTint="@color/Button"
         android:text="Cancelar"
         android:textColor="@color/ButtonText"
