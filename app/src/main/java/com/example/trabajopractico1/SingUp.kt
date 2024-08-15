@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.saveable.mapSaver
+import androidx.core.view.isVisible
 
 class SingUp : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +17,18 @@ class SingUp : ComponentActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.sing_up)
         val acept=findViewById<Button>(R.id.acept)
+        val cancel=findViewById<Button>(R.id.btnCancel)
+        val outPass=findViewById<TextView>(R.id.outPass)
+        val outMail=findViewById<TextView>(R.id.outMail)
+        val outUser=findViewById<TextView>(R.id.outUsr)
+
+        cancel.setOnClickListener(){
+            startActivity(Intent(this,MainActivity::class.java))
+        }
         acept.setOnClickListener(){
+            outUser.isVisible=!validateUsername()
+            outMail.isVisible=!validateMail()
+            outPass.isVisible=!verificationPass()
             if (verificationPass()&&validateUsername()&&validateMail()){
                 startActivity(Intent(this,MainActivity::class.java))
             }
