@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
             val password = editTextPassword.text.toString()
 
             // Datos hardcodeados para la verificación
-            val validUsername = "usuario"
-            val validPassword = "123456"
+            val validUsername = "Juan Torres"
+            val validPassword = "1234utn"
 
             if (username == validUsername && password == validPassword) {
                 // Si coinciden, procede con la acción (por ejemplo, navegar a otra actividad)
