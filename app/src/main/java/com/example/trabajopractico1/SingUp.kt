@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.runtime.saveable.mapSaver
 import androidx.core.view.isVisible
 
 class SingUp : ComponentActivity() {
