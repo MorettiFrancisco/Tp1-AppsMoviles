@@ -62,7 +62,8 @@
                 android:inputType="textEmailAddress|text"
                 android:padding="10dp"
                 android:layout_marginBottom="16dp"
-                android:autofillHints="emailAddress|username" />
+                android:autofillHints="emailAddress|username"
+                android:textColor="@color/Text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -79,7 +80,8 @@
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColorHint="@color/HintText"
-                android:autofillHints="password" />
+                android:autofillHints="password"
+                android:textColor="@color/Text"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
