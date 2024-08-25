@@ -136,11 +136,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:hint="Escribe Preferencia"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:textColorHint="@color/HintText"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/Text"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
