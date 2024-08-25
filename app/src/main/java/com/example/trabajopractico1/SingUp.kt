@@ -35,7 +35,7 @@ class SingUp : ComponentActivity() {
         }
     }
     private fun verificationPass():Boolean{
-        val pass=findViewById<EditText>(R.id.pass)
+        val pass=findViewById<EditText>(R.id.txt)
         val veriPass=findViewById<EditText>(R.id.veri)
         if (pass.text.toString()==veriPass.text.toString()&&validatePass(pass.text.toString())){
             return true
