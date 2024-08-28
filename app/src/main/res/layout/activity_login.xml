@@ -18,12 +18,43 @@
         android:layout_marginBottom="42dp"
         android:text="Bienvenido"
         android:textColor="@color/Text"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <Button
+            android:id="@+id/apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iOS"
+            android:layout_marginEnd="16dp"/>
+
+
+        <Button
+            android:id="@+id/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
@@ -33,45 +64,20 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
-        android:layout_marginTop="80dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/buttonLayout"
+        android:layout_marginTop="24dp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="202dp"
         android:layout_height="197dp"
-        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/apple"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
-        app:srcCompat="@drawable/apple"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/buttonLayout"
+        android:layout_marginTop="24dp" />
 
-    <Button
-        android:id="@+id/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Android"
-        app:layout_constraintStart_toEndOf="@+id/apple"
-        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/apple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="20dp"
-        android:text="IOs"
-        app:layout_constraintEnd_toStartOf="@id/android"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
