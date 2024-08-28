@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             if (username == validUsername && password == validPassword) {
                 // Si coinciden, procede con la acción (por ejemplo, navegar a otra actividad)
                 val intent = Intent(this, Login::class.java)
+                intent.putExtra("nombreUsuario", username)
                 startActivity(intent)
             } else {
                 // Si no coinciden, muestra un mensaje de error
